@@ -263,9 +263,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.enable_boot_charger_mode=1
 
 
-# Allows force add of Email accoung
+# Sekwel properties
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.test_harness=1
+    ro.test_harness=1 \
+    qemu.hw.mainkeys=1
 
 # Fix device startup error
 PRODUCT_BUILD_PROP_OVERRIDES += \
