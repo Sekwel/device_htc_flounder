@@ -36,7 +36,7 @@ $(call inherit-product, device/htc/flounder/device-lte.mk)
 $(call inherit-product-if-exists, vendor/htc/flounder_lte/device-vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
-PRODUCT_NAME := sekwel_flounder
+PRODUCT_NAME := aosp_flounder
 PRODUCT_DEVICE := flounder
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 9
