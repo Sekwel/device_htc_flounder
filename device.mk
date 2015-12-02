@@ -268,6 +268,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.test_harness=1 \
     qemu.hw.mainkeys=1
 
+# Sekwel bootanimation
+PRODUCT_COPY_FILES += \
+   $(LOCAL_PATH)/bootanimation.zip:/system/media/bootanimation.zip
+
 # Fix device startup error
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=flounder \
