@@ -262,6 +262,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.enable_boot_charger_mode=1
 
+# SIP Telephony properties
+#PRODUCT_COPY_FILES +=\
+#    frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
+#PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+#    ro.telephony.default_network=3
 
 # Sekwel properties
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
@@ -278,6 +283,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=google/volantis/flounder:5.1.1/LMY47X/1849464:user/release-keys \
     PRIVATE_BUILD_DESC="flounder-user 5.1.1 LMY47X 1849464 release-keys"
 
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/telephony.mk)
 $(call inherit-product-if-exists, hardware/nvidia/tegra132/tegra132.mk)
 $(call inherit-product-if-exists, vendor/nvidia/proprietary-tegra132/tegra132-vendor.mk)
 $(call inherit-product-if-exists, vendor/htc/flounder/device-vendor.mk)
