@@ -271,11 +271,23 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 # Sekwel properties
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.test_harness=1 \
-    qemu.hw.mainkeys=1
+    qemu.hw.mainkeys=1 \
+    ro.config.notification_sound=none
 
 # Sekwel bootanimation
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/bootanimation.zip:/system/media/bootanimation.zip
+
+# HID-Reader files
+PRODUCT_COPY_FILES += \
+   $(LOCAL_PATH)/hid-reader/binaries/pcscd:/system/bin/pcscd \
+   $(LOCAL_PATH)/hid-reader/binaries/testpcsc:/system/bin/testpcsc \
+   $(LOCAL_PATH)/hid-reader/drivers/ifd-ccid.bundle/Contents/Info.plist:/system/pcscd/usb/ifd-ccid.bundle/Contents/Info.plist \
+   $(LOCAL_PATH)/hid-reader/drivers/ifd-ccid.bundle/Contents/Linux/libccid.so:/system/pcscd/usb/ifd-ccid.bundle/Contents/Linux/libccid.so \
+   $(LOCAL_PATH)/hid-reader/drivers/serial/libccidtwin.so:/system/pcscd/usb/serial/libccidtwin.so \
+   $(LOCAL_PATH)/hid-reader/libs/libccid.so:/system/lib/libccid.so \
+   $(LOCAL_PATH)/hid-reader/libs/libmsc.so:/system/lib/libmsc.so \
+   $(LOCAL_PATH)/hid-reader/libs/libpcsclite.so:/system/lib/libpcsclite.so
 
 # Fix device startup error
 PRODUCT_BUILD_PROP_OVERRIDES += \
