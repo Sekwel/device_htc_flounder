@@ -146,3 +146,7 @@ EXTENDED_FONT_FOOTPRINT := true
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
 MALLOC_IMPL := dlmalloc
+
+# Koush Superuser package name (Sekwel modified version)
+# Does not conflict with Google Play version
+SUPERUSER_PACKAGE := com.sekwel.superuser
