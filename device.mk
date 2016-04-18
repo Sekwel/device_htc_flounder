@@ -258,9 +258,10 @@ PRODUCT_PACKAGES += \
     sshd_config \
     start-ssh
 
-# for Koush Superuser
+# for seSuperuser (fork of Koush)
 PRODUCT_PACKAGES += \
-    Superuser
+    Superuser \
+    su
 
 # Allows healthd to boot directly from charger mode rather than initiating a reboot.
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
