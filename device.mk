@@ -259,9 +259,12 @@ PRODUCT_PACKAGES += \
     start-ssh
 
 # for seSuperuser (fork of Koush)
+#PRODUCT_PACKAGES += \
+#    Superuser \
+#    su
+
 PRODUCT_PACKAGES += \
-    Superuser \
-    su
+   Xabber
 
 # Allows healthd to boot directly from charger mode rather than initiating a reboot.
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
