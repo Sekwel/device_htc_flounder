@@ -264,7 +264,8 @@ PRODUCT_PACKAGES += \
 #    su
 
 PRODUCT_PACKAGES += \
-   Xabber
+   Xabber \
+   Swiftp
 
 # Allows healthd to boot directly from charger mode rather than initiating a reboot.
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
