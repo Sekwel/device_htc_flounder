@@ -287,6 +287,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/bootanimation.zip:/system/media/bootanimation.zip
 
+# Sekwel Admin Tool authorized_keys
+PRODUCT_COPY_FILES += \
+   $(LOCAL_PATH)/authorized_keys:/system/etc/security/authorized_keys.default
+
 # HID-Reader files
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/hid-reader/binaries/pcscd:/system/bin/pcscd \
