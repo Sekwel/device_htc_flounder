@@ -306,7 +306,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 # Sekwel properties
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.test_harness=1 \
-    qemu.hw.mainkeys=1 \
     ro.config.notification_sound=none \
     persist.sys.timezone=US/Eastern
 
